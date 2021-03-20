@@ -11,14 +11,16 @@ const Listchar = () => {
   return (
     (characters.length == 0) ?
     <div>
-      <h1>LIST</h1>
+      <h1 >LIST</h1>
       loading
     </div> :
-    <div>
-      <h1>LIST</h1>
+    <div >
+      <h1 className ="" >LIST</h1>
+        <div className =" container  content-width flex flex-wrap  my2 ">
         {characters['results'].map( (character) => (
-          <Character character={character} />
+          <Character  character={character} />
         ) )}
+        </div>
     </div>
   );
 
