@@ -15,7 +15,7 @@ const Listchar = () => {
       loading
     </div> :
     <div>
-      <h1>LIST</h1>
+      <h1>LIdsdST</h1>
         {characters['results'].map( (character) => (
           <Character character={character} />
         ) )}

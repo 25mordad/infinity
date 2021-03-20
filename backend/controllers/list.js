@@ -8,6 +8,7 @@ const { getCharacter } = pkg;
 ///get list
 export const getList = async (req,res) => {
 
+
 const { id } = req.params;
 
 

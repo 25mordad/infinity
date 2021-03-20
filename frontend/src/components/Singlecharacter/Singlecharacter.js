@@ -16,7 +16,7 @@ const Singlecharacter = ({ }) => {
 
   useEffect(async () => {
     const result = await axios(
-      'http://localhost:5000/list/character/'+id,
+      process.env.REACT_APP_SERVER+'/list/character/'+id,
     );
 
     setData(result.data);
@@ -35,7 +35,7 @@ const Singlecharacter = ({ }) => {
     </div>
   );
 
-  
+
 }
 
 export default Singlecharacter;
