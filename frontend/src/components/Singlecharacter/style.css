@@ -1,0 +1,9 @@
+.bg-black {
+  background-color: #333333;
+  color: beige;
+}
+.circle {
+  margin: 1rem;
+  border: 3px solid #99ff00;
+  border-radius: 50%;
+}
