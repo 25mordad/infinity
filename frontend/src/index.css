@@ -19,6 +19,7 @@
 body {
   font-family: "Lato";
   background-color: #000;
+  color: white;
 }
 
 /* -- Normal CSS --*/
@@ -711,7 +712,7 @@ button {
 @media (min-width: 0rem) and (max-width: 40rem) {
   /* -- Container -- */
   /* .container {
-   
+
      max-width: 100%;
     } */
 
@@ -803,7 +804,7 @@ button {
   /* -- / Floats --*/
   /* -- Container -- */
   /* .container {
-   
+
      max-width: 100%;
     } */
 

@@ -12,6 +12,7 @@ export const getList = async (req,res) => {
 const { id } = req.params;
 
 
+
   try {
     const list = await getCharacter({ page: id });
 
@@ -29,12 +30,28 @@ export const getCharac = async (req,res) => {
 
 const { id } = req.params;
 
-
   try {
 
     const charac = await getCharacter(parseInt(id));
 
     res.status(200).json(charac);
+
+  } catch (e) {
+    res.status(404).json({ message: error.message });
+  }
+}
+
+///like charac
+export const likeCharac = async (req,res) => {
+
+const { id } = req.params;
+
+  try {
+
+
+    console.log(id,req.userId);
+
+    res.status(200).json(id);
 
   } catch (e) {
     res.status(404).json({ message: error.message });

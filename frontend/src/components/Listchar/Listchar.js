@@ -18,7 +18,7 @@ const Listchar = () => {
       <h1 className ="" >LIST</h1>
         <div className =" container  content-width flex flex-wrap  my2 ">
         {characters['results'].map( (character) => (
-          <Character  character={character} />
+          <Character key={character.id} character={character} />
         ) )}
         </div>
     </div>

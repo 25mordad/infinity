@@ -4,11 +4,12 @@ import { getSinglecharacter } from '../../actions/characters';
 import { useSelector } from 'react-redux';
 import {  useParams } from "react-router-dom";
 import axios from 'axios';
+import { likeIt } from '../../actions/characters';
 
 const Singlecharacter = ({ }) => {
   const character = useSelector((state) => state.characters);
   let { id } = useParams();
-
+  const dispatch = useDispatch();
 
 
   const [data, setData] = useState({ });
@@ -23,6 +24,17 @@ const Singlecharacter = ({ }) => {
   }, []);
 
 
+  const Likes = () => {
+
+    return(
+      <div>
+        <button onClick={() => dispatch(likeIt(data.id))}>
+          Like
+        </button>
+      </div>
+    );
+
+  }
 
   return (
     <div>
@@ -31,6 +43,8 @@ const Singlecharacter = ({ }) => {
       {data.status}
       <br/>
       <img src={data.image} />
+      <br/>
+      <Likes />
       <br/>
     </div>
   );

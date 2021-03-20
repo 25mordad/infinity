@@ -14,9 +14,23 @@ export const getCharacters = (page) => async (dispatch) => {
 export const getSinglecharacter = (id) => async (dispatch) => {
   try {
     const { data } = await api.fetchSinglechar(id);
-  
+
 
     dispatch({ type: 'FETCH_SINGLE', payload: data });
+  } catch (error) {
+    console.log(error.message);
+  }
+};
+
+export const likeIt = (id) => async (dispatch) => {
+  try {
+
+    console.log("likeIT");
+    const { data } = await api.likeCharacter(id);
+    //
+    //
+    // dispatch({ type: 'likeIT', payload: data });
+
   } catch (error) {
     console.log(error.message);
   }
