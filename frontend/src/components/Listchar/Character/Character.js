@@ -1,6 +1,6 @@
 import React  from 'react';
-import like from "../../../images/like.png";
-import likefull from "../../../images/likefull.png";
+import like from "../../../images/like.svg";
+import likefull from "../../../images/likefull.svg";
 import './style.css';
 
 const Character = ({ character }) => {
