@@ -443,6 +443,17 @@ button {
   text-align: right;
 }
 
+.icon-width1 {
+  width: 3rem;
+  float: left;
+}
+
+.icon-width2 {
+  width: 3rem;
+  float: right;
+  text-align: right;
+}
+
 .justify {
   text-align: justify;
 }
@@ -598,8 +609,19 @@ button {
   position: relative;
 }
 
-.absolute {
+.absolute-bottom {
   position: absolute;
+}
+
+.absolute-right {
+  position: absolute;
+  right: 100px;
+}
+
+.absolute-bottom {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 
 .fixed {
@@ -720,7 +742,7 @@ button {
 @media (min-width: 0rem) and (max-width: 40rem) {
   /* -- Container -- */
   /* .container {
-
+   
      max-width: 100%;
     } */
 
@@ -812,7 +834,7 @@ button {
   /* -- / Floats --*/
   /* -- Container -- */
   /* .container {
-
+   
      max-width: 100%;
     } */
 
@@ -1255,7 +1277,7 @@ button {
 }
 
 .box-shadow {
-  box-shadow: 0px 3px 7px #ccc;
+  box-shadow: 0px 3px 7px #a3f597;
 }
 .box-shadow:hover {
   box-shadow: 0px 7px 14px #dcdcdc;
@@ -1282,15 +1304,14 @@ button {
 }
 
 .btn-secondary {
-  color: #99ff00;
-  background-color: #ffffff;
-  border: 2px solid #99ff00;
+  color: #fff;
+  background-color: rgb(11, 60, 221);
 }
 
 .btn.secondary:hover,
 .btn:hover {
   color: #fff;
-  background-color: #99ff00;
+  background-color: #99ff33;
   box-shadow: 0 0 15px rgba(33, 33, 33, 0.5);
 }
 

@@ -39,12 +39,12 @@ const Singlecharacter = ({ }) => {
       (setLikestatus == -1)?
       <>
       <button onClick={() => dispatch(likeIt(data.id))}  className="btn btn-default">
-        ADD TO  FAVORITES</button>
+        Remove</button>
       </>
     :
     <>
     <button onClick={() => dispatch(likeIt(data.id))}  className="btn btn-default">
-      Remove</button>
+      ADD TO  FAVORITES</button>
     </>
     );
 

@@ -39,7 +39,6 @@ const Auth = ({ }) => {
        <div className ="lg-col-5 md-col-5 sm-col-6 xs-col-12 py2 pb4 ">
         <div>
 
-
         <form   className ="contact-form"   onSubmit={handleSubmit}>
         { isSignup && (
         <label  className =" form-control" >

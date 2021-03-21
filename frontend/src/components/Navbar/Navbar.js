@@ -7,7 +7,7 @@ import logo from "../../images/logo.png";
 
 const Navbar = ({ }) => {
   const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')));
-  
+
   const dispatch = useDispatch();
   const location = useLocation();
 
@@ -38,15 +38,16 @@ const Navbar = ({ }) => {
       <img  className =" responsive " src={logo} />
       </div>
 
-      <div className =" lg-col-10 md-col-9s sm-col-8 xs-col-6 right right-text " >
+      <div className ="lg-col-10 md-col-9  sm-col-8 xs-col-6 right right-text " >
 
       {user?.result ? (
-        <div className =" flex flex-wrap  right  " >
-        <h3 className =" mr2  "> Hello {user?.result.name}</h3>
+        <div className =" flex flex-wrap right" >
+          <br/>
+        <h3 className =" mr2 pr2"> Hello {user?.result.name}</h3>
           <button  className =" btn btn-default"  onClick={logout}>Logout</button>
         </div>
       ) : (
-        <a href="/auth" >User Auth</a>
+        <a className =" btn btn-default"  href="/auth" >Login</a>
       )}
       </div>
 
