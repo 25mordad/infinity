@@ -10,3 +10,4 @@ Using React, Node.js, Express & MongoDB. The App is called "Infinity".
 
 Setup:
 - run ```npm i && npm start``` for both backend and fronend side to start the app
+- make a copy from .env.copy (both backend and frontend) and name it .env and setup with a right variables. 
