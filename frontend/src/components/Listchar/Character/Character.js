@@ -8,8 +8,8 @@ const charLink = "/character/"+ character.id;
 let srcLike ="";
 if (localStorage.getItem('profile')) {
   const allLikes = Object.values(JSON.parse(localStorage.getItem('likes')));
-  const isLiked = allLikes.findIndex(a => a == character.id);
-  if ( isLiked == -1) {
+  const isLiked = allLikes.findIndex(a => parseInt(a) === parseInt(character.id));
+  if ( isLiked === -1) {
     srcLike = like;
   }else{
     srcLike = likefull;

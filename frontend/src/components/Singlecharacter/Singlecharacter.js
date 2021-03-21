@@ -1,29 +1,27 @@
 import React , { useState, useEffect }  from 'react';
 import { useDispatch } from 'react-redux';
-import { getSinglecharacter } from '../../actions/characters';
-import { useSelector } from 'react-redux';
 import {  useParams } from "react-router-dom";
 import axios from 'axios';
 import { likeIt } from '../../actions/auth';
 import './style.css';
 
-const Singlecharacter = ({ }) => {
-  const character = useSelector((state) => state.characters);
+const Singlecharacter = () => {
   let { id } = useParams();
   const dispatch = useDispatch();
 
 
   const [data, setData] = useState({ });
-
-
-  const findFav = Object.values(JSON.parse(localStorage.getItem('likes'))).findIndex( a => a == id );
-  const [likestatus, setLikestatus] = useState(findFav);
   let initliketxt = "ADD TO  FAVORITES";
-  if (findFav != -1){
-    initliketxt = "Remove";
-  }
-  const [liketxt, setLiketxt] = useState(initliketxt);
+  let findFav = -1;
 
+  if (localStorage.getItem('profile')) {
+    findFav = Object.values(JSON.parse(localStorage.getItem('likes'))).findIndex( a => a === id );
+    if (findFav !== -1){
+      initliketxt = "Remove";
+    }
+  }
+  const [likestatus, setLikestatus] = useState(findFav);
+  const [liketxt, setLiketxt] = useState(initliketxt);
 
   useEffect(async () => {
     const result = await axios(
@@ -36,14 +34,20 @@ const Singlecharacter = ({ }) => {
 
 
   function handleClicklike() {
-   dispatch(likeIt(data.id))
-   if (likestatus == -1) {
-     setLikestatus(parseInt(id));
-     setLiketxt("Remove");
+    if (localStorage.getItem('profile')) {
+     dispatch(likeIt(data.id))
+     if (likestatus === -1) {
+       setLikestatus(parseInt(id));
+       setLiketxt("Remove");
+     }else{
+       setLikestatus(-1);
+       setLiketxt("ADD TO  FAVORITES");
+     }
    }else{
-     setLikestatus(-1);
-     setLiketxt("ADD TO  FAVORITES");
+
+     window.location.href = '/auth';
    }
+
   }
 
 

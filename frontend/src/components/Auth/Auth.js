@@ -7,7 +7,7 @@ import './style.css';
 
 const initialState = { name: '', email: '', password: '' };
 
-const Auth = ({ }) => {
+const Auth = () => {
   const [form, setForm] = useState(initialState);
   const dispatch = useDispatch();
   const history = useHistory();
@@ -57,7 +57,7 @@ const Auth = ({ }) => {
         <div className ="py2">
         <input type="submit" name="submit" />
         </div>
-     
+
       <button onClick={switchMode}>
               { isSignup ? 'Already have an account? Sign in' : "Don't have an account? Sign Up" }
        </button>
@@ -65,7 +65,7 @@ const Auth = ({ }) => {
         </div>
        </div>
        <div className =" xs-hide  lg-col-7 md-col-7 sm-col-6 xs-col-12 ">
-       <img  className =" responsive " src={ricpic} />  
+       <img alt="rickphoto" className =" responsive " src={ricpic} />
        </div>
        </div>
      </div>

@@ -5,7 +5,7 @@ import {  useLocation } from 'react-router-dom';
 import logo from "../../images/logo.png";
 
 
-const Navbar = ({ }) => {
+const Navbar = () => {
   const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')));
 
   const dispatch = useDispatch();
