@@ -33,7 +33,7 @@ if (localStorage.getItem('profile')) {
         </div>
         <div className ="absolute-bottom  lg-col-2 md-col-2 sm-col-2 xs-col-2 pt2">
           <br/>
-         <img alt="like" className ="pointer responsive" src={srcLike} />
+         <a href={charLink}><img alt="like" className ="pointer icon-w" src={srcLike} /></a>
        </div>
 
 
