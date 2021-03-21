@@ -35,32 +35,31 @@
   padding: 18px;
   font-size: 1rem;
   border: 0;
-  background: #74dd0c;
+  background: #360c66;
   border-radius: 4px;
   cursor: pointer;
-  color: #000;
+  color: #fff;
   font-weight: bold;
 }
 
 .contact-form input[type="submit"]:hover {
-  background-color: #2ee59d;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  background-color: #062454;
+  box-shadow: 0px 15px 20px rgba(160, 156, 166, 0.4);
   color: #fff;
   transform: translateY(-2px);
 }
 
 .contact-form button {
   width: 100%;
-  padding: 14px;
-  margin-top: 14px;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 700;
+  padding: 18px;
+  font-size: 1rem;
+  border: 0;
   color: #fff;
-  background-color: #09d6d3;
-  border: none;
-  border-radius: 45px;
+  background-color: #cab2eb;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
   cursor: pointer;
@@ -68,8 +67,8 @@
 }
 
 .contact-form button:hover {
-  background-color: #2ee59d;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  background-color: #062454;
+  box-shadow: 0px 15px 20px rgba(160, 156, 166, 0.4);
   color: #fff;
   transform: translateY(-2px);
 }

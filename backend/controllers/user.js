@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 
 import UserModal from "../models/user.js";
 
-const secret = process.env.SECRET;
+const secret = "rickandmortyinfinity";
 
 export const signin = async (req, res) => {
   const { email, password } = req.body;

@@ -1,16 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;500;700;900&display=swap");
+
+a {
+  text-decoration: none;
+}
 
 .rick-border {
-  border: 1px solid #99ff00;
+  border: 3px solid #f2f2f2;
   border-radius: 6px;
+}
+
+.bg-logo {
+  width: auto;
+  height: auto;
+  background-image: url(./images/bg.svg);
+}
+
+.bg-gray {
+  background-color: #f2f2f2;
+}
+.margin-min {
+  margin-top: -10px;
 }
 
 .debug {
   border: 1px solid red;
-}
-
-.debug2 {
-  border: 1px solid blue;
 }
 
 .light {
@@ -23,11 +36,24 @@
 
 body {
   font-family: "Lato";
-  background-color: #000;
-  color: beige;
+  background-color: #fff;
+  color: #000;
 }
+
 .rick-color {
   color: #99ff33;
+}
+
+.text-navy {
+  color: #062454;
+}
+.border-navy {
+  border: 2px solid #fff;
+  border-radius: 6px;
+}
+.text-72 {
+  font-size: 6rem;
+  font-weight: 900;
 }
 
 /* -- Normal CSS --*/
@@ -1276,15 +1302,6 @@ button {
   width: 90%;
 }
 
-.box-shadow {
-  box-shadow: 0px 3px 7px #a3f597;
-}
-.box-shadow:hover {
-  box-shadow: 0px 7px 14px #dcdcdc;
-  -webkit-box-shadow: 0px 7px 14px #bebebe; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow: 0px 7px 14px #bebebe; /* Firefox 3.5 - 3.6 */
-}
-
 .btn {
   font-size: 16px;
   padding: 10px 16px;
@@ -1298,9 +1315,9 @@ button {
 }
 
 .btn-default {
-  color: #000;
-  background-color: #99ff00;
-  border: 2px solid #99ff00;
+  color: #fff;
+  background-color: #062454;
+  border: 2px solid #062454;
 }
 
 .btn-secondary {
@@ -1311,7 +1328,7 @@ button {
 .btn.secondary:hover,
 .btn:hover {
   color: #fff;
-  background-color: #99ff33;
+  background-color: #360c66;
   box-shadow: 0 0 15px rgba(33, 33, 33, 0.5);
 }
 

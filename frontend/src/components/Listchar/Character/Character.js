@@ -20,12 +20,12 @@ if (localStorage.getItem('profile')) {
 
   return (
     <div className ="lg-col-3 md-col-4 sm-col-6 xs-col-12  "   >
-      <div className ="box-shadow rounded rick-border bg-black m3">
+      <div className ="box-shadow rounded  bg-navy m3">
 
-      <a href={charLink} ><img className ="rounded-top responsive  " src={character.image} /></a>
+      <a href={charLink}><img className ="rounded-top responsive  " src={character.image} /></a>
       <br/>
       <div className ="p2 px3">
-      <h3 className="rick-color "> {character.name}</h3>
+      <a  className ="heavy text-beige " href={charLink}> {character.name} </a>
 
       <div className =" relative">
 

@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import decode from 'jwt-decode';
 import {  useLocation } from 'react-router-dom';
-import logo from "../../images/logo.png";
+import logo from "../../images/logo.jpg";
+
 
 
 const Navbar = ({ }) => {
@@ -32,13 +33,13 @@ const Navbar = ({ }) => {
 
 
   return (
-    <div className =" container content-width flex flex-wrap rick-border mt4 my4 p3  " >
+    <div className =" container  content-width flex flex-wrap  " >
 
-      <div className ="lg-col-2 md-col-3 sm-col-4 xs-col-6  left" >
+      <div className ="lg-col-1 md-col-1 sm-col-2 xs-col-2  left" >
       <a  href="/" ><img  className =" responsive " src={logo} />  </a>
       </div>
 
-      <div className ="lg-col-10 md-col-9  sm-col-8 xs-col-6 right right-text " >
+      <div className ="lg-col-11  md-col-11  sm-col-10 xs-col-10 right right-text " >
 
       {user?.result ? (
         <div className =" flex flex-wrap right" >

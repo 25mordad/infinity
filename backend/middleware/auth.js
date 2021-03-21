@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 
-const secret = process.env.SECRET;
+const secret = "rickandmortyinfinity";
 
 const auth = async (req, res, next) => {
   try {
