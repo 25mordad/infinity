@@ -47,10 +47,7 @@ body {
 .text-navy {
   color: #062454;
 }
-.border-navy {
-  border: 2px solid #fff;
-  border-radius: 6px;
-}
+
 .text-72 {
   font-size: 6rem;
   font-weight: 900;

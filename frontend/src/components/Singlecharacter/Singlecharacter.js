@@ -67,13 +67,13 @@ const Singlecharacter = () => {
 
 
 
-    <div className =" my4 ">
-     <div className =" container  content-width flex flex-wrap  my4  pt2 rick-border ">
-        <div className ="lg-col-3 md-col-3 sm-col-6 xs-col-12 my4">
-          <img  className="circle my2" src={data.image} /> <br/>
+    <div className =" my4  ">
+     <div className ="  border-navy  container  content-width flex flex-wrap   ">
+        <div className ="lg-col-3 md-col-3 sm-col-6 xs-col-11 my4 p4">
+          <img alt="charpic" className="circle my2" src={data.image} /> 
         </div>
-         <div  className="lg-col-9 md-col-9 sm-col-6 xs-col-12 my4 pl4">
-            <h2 className="rick-color">  {data.name} </h2>
+         <div  className="lg-col-9 md-col-9 sm-col-6 xs-col-12 p2  my1 pl4">
+            <h2 className="rick-color text-title">  {data.name} </h2>
             <p>{data.status} - {data.gender} </p>
             <p><span className="heavy">species: </span> {data.species}</p>
             <p><span className="heavy">Last known location: </span> Earth (Replacement Dimension)</p>

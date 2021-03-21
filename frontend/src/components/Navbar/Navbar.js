@@ -35,11 +35,11 @@ const Navbar = () => {
   return (
     <div className =" container  content-width flex flex-wrap  " >
 
-      <div className ="lg-col-1 md-col-1 sm-col-2 xs-col-2  left" >
+      <div className ="lg-col-1 md-col-1 sm-col-2 xs-col-3  left" >
       <a  href="/" ><img  className =" responsive " src={logo} />  </a>
       </div>
 
-      <div className ="lg-col-11  md-col-11  sm-col-10 xs-col-10 right right-text " >
+      <div className ="lg-col-11  md-col-11  sm-col-10 xs-col-9 " >
 
       {user?.result ? (
         <div className =" flex flex-wrap right" >

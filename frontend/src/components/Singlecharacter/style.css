@@ -1,9 +1,19 @@
-.bg-black {
-  background-color: #333333;
+.bg-gray2 {
+  background-color: #3c3e44;
   color: beige;
 }
 .circle {
   margin: 1rem;
-  border: 3px solid #99ff00;
+  border: 3px solid #062454;
   border-radius: 50%;
+}
+
+.border-navy {
+  border: 3px solid #062454;
+  border-radius: 18px;
+}
+
+.text-title {
+  font-size: 3rem;
+  font-weight: 700;
 }
