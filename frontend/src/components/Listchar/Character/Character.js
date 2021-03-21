@@ -5,13 +5,17 @@ import './style.css';
 
 const Character = ({ character }) => {
 const charLink = "/character/"+ character.id;
-const allLikes = Object.values(JSON.parse(localStorage.getItem('likes')));
-const isLiked = allLikes.findIndex(a => a == character.id);
 let srcLike ="";
-if ( isLiked == -1) {
-  srcLike = like;
+if (localStorage.getItem('profile')) {
+  const allLikes = Object.values(JSON.parse(localStorage.getItem('likes')));
+  const isLiked = allLikes.findIndex(a => a == character.id);
+  if ( isLiked == -1) {
+    srcLike = like;
+  }else{
+    srcLike = likefull;
+  }
 }else{
-  srcLike = likefull;
+  srcLike = like;
 }
 
   return (
