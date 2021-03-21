@@ -64,9 +64,6 @@ const Singlecharacter = () => {
   }
 
   return (
-
-
-
     <div className =" my4  ">
      <div className ="  border-navy  container  content-width flex flex-wrap   ">
         <div className ="lg-col-3 md-col-3 sm-col-6 xs-col-11 my4 p4">
@@ -76,11 +73,11 @@ const Singlecharacter = () => {
             <h2 className="rick-color text-title">  {data.name} </h2>
             <p>{data.status} - {data.gender} </p>
             <p><span className="heavy">species: </span> {data.species}</p>
-            <p><span className="heavy">Last known location: </span> Earth (Replacement Dimension)</p>
+            <p><span className="heavy">Last known URL: </span> {data.url}</p>
             <p><span className="heavy">Created: </span> {data.created}</p>
             <Likes />
          </div>
-
+      
     </div>
 
     </div>

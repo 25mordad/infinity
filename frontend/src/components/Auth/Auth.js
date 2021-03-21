@@ -35,7 +35,7 @@ const Auth = () => {
 
   return (
      <div className =" my4">
-      <div className ="lg-col-7 md-col-10  margin-auto flex flex-wrap rick-border ">
+      <div className ="lg-col-8 md-col-10  margin-auto flex flex-wrap rick-border ">
        <div className ="lg-col-5 md-col-5 sm-col-6 xs-col-12 py2 pb4 ">
         <div>
 
@@ -54,7 +54,7 @@ const Auth = () => {
         <p className ="heavy" >Password </p>
           <input type="password" name="password" onChange={handleChange} />
         </label>
-        <div className ="py2">
+        <div className ="py2 my3">
         <input type="submit" name="submit" />
         </div>
 

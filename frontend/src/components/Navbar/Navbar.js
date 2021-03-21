@@ -33,19 +33,19 @@ const Navbar = () => {
 
 
   return (
-    <div className =" container  content-width flex flex-wrap  " >
+    <div className =" container  content-width flex flex-wrap  mt4 pt2 " >
 
       <div className ="lg-col-1 md-col-1 sm-col-2 xs-col-3  left" >
-      <a  href="/" ><img  className =" responsive " src={logo} />  </a>
+      <a  href="/" ><img  alt="logo" className =" responsive " src={logo} />  </a>
       </div>
 
-      <div className ="lg-col-11  md-col-11  sm-col-10 xs-col-9 " >
+      <div className ="lg-col-11  md-col-11  sm-col-10 xs-col-9 right   pt4 right-text " >
 
       {user?.result ? (
-        <div className =" flex flex-wrap right" >
+        <div className =" flex flex-wrap right mt4 pt4 " >
           <br/>
         <h3 className =" mr2 pr2"> Hello {user?.result.name}</h3>
-          <button  className =" btn btn-default"  onClick={logout}>Logout</button>
+          <button  className =" btn btn-default pt4 "  onClick={logout}>Logout</button>
         </div>
       ) : (
         <a className =" btn btn-default"  href="/auth" >Login</a>

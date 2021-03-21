@@ -72,70 +72,6 @@ button {
 }
 
 /* -- Margins -- */
-/* -- 0 -- */
-
-.m0 {
-  margin: 0rem;
-}
-
-.mx0 {
-  margin-left: 0rem;
-  margin-right: 0rem;
-}
-
-.my0 {
-  margin-top: 0rem;
-  margin-bottom: 0rem;
-}
-
-.mt0 {
-  margin-top: 0rem;
-}
-
-.mr0 {
-  margin-right: 0rem;
-}
-
-.mb0 {
-  margin-bottom: 0rem;
-}
-
-.ml0 {
-  margin-left: 0rem;
-}
-
-/* -- 1 -- */
-
-.m1 {
-  margin: 2px;
-}
-
-.mx1 {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-}
-
-.my1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
-.mt1 {
-  margin-top: 0.25rem;
-}
-
-.mr1 {
-  margin-right: 0.25rem;
-}
-
-.mb1 {
-  margin-bottom: 0.25rem;
-}
-
-.ml1 {
-  margin-left: 0.25rem;
-}
-
 /* -- 2 -- */
 .m2 {
   margin: 0.5rem;
@@ -166,7 +102,6 @@ button {
 .ml2 {
   margin-left: 0.5rem;
 }
-
 /* -- 3 -- */
 .m3 {
   margin: 1rem;
@@ -229,71 +164,9 @@ button {
   margin-left: 1.5rem;
 }
 
-/* -- 5 -- */
-.m5 {
-  margin: 3rem;
-}
-
-.mx5 {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
-.my5 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
-.mt5 {
-  margin-top: 3rem;
-}
-
-.mr5 {
-  margin-right: 3rem;
-}
-
-.mb5 {
-  margin-bottom: 3rem;
-}
-
-.ml5 {
-  margin-left: 3rem;
-}
-
 /* -- / Margins -- */
 
 /* -- Paddings -- */
-/* -- 0 -- */
-.p0 {
-  padding: 0rem;
-}
-
-.px0 {
-  padding-left: 0rem;
-  padding-right: 0rem;
-}
-
-.py0 {
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-}
-
-.pt0 {
-  padding-top: 0rem;
-}
-
-.pr0 {
-  padding-right: 0rem;
-}
-
-.pb0 {
-  padding-bottom: 0rem;
-}
-
-.pl0 {
-  padding-left: 0rem;
-}
-
 /* -- 1 -- */
 
 .p1 {
@@ -418,38 +291,6 @@ button {
 .pl4 {
   padding-left: 2.5rem;
 }
-
-/* -- 5 -- */
-.p5 {
-  padding: 3rem;
-}
-
-.px5 {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-.py5 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.pt5 {
-  padding-top: 10rem;
-}
-
-.pr5 {
-  padding-right: 3rem;
-}
-
-.pb5 {
-  padding-bottom: 3rem;
-}
-
-.pl5 {
-  padding-left: 3rem;
-}
-
 /* -- / Paddings -- */
 
 /* -- Text Alignment -- */
@@ -463,17 +304,6 @@ button {
 }
 
 .right-text {
-  text-align: right;
-}
-
-.icon-width1 {
-  width: 3rem;
-  float: left;
-}
-
-.icon-width2 {
-  width: 3rem;
-  float: right;
   text-align: right;
 }
 
@@ -553,26 +383,7 @@ button {
   clear: both;
 }
 
-.clear::after {
-  display: block;
-  clear: both;
-  content: "";
-}
-
-.container-fluid {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 /* -- / Container -- */
-
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
 
 /* -- Cols --*/
 .xs-col-1,
@@ -734,71 +545,17 @@ button {
 
 /* -- / Displays CSS --*/
 
-/* -- Flex -- */
-
-.flex-column {
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 .flex-wrap {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
-/* -- / Flex -- */
-
-/* -- / Normal CSS --*/
-
-/* -- Test CSS -- */
-
-.myColorContainer {
-  background: #ff0000;
-  height: auto;
-}
-
-/* -- / Test CSS -- */
-
-/* -- Media Queries --*/
-
-/* -- Mobile --*/
 @media (min-width: 0rem) and (max-width: 40rem) {
-  /* -- Container -- */
-  /* .container {
-   
-     max-width: 100%;
-    } */
-
-  /* -- / Container -- */
-  .myColorContainer {
-    background: #ff0000;
-  }
-
   .xs-hide {
     display: none;
   }
-
-  .xs-pr0 {
-    padding-right: 0rem;
-  }
-
-  .xs-pl0 {
-    padding-left: 0rem;
-  }
-
-  .xs-pt0 {
-    padding-top: 0rem;
-  }
-
-  .mt-20 {
-    margin-top: 5px;
-  }
-  .xs-mt2 {
-    margin-top: 1rem;
-  }
 }
 
-/* -- Tablet --*/
 @media (min-width: 40.1rem) and (max-width: 52rem) {
   /* -- Text Alignment -- */
 
@@ -843,28 +600,6 @@ button {
   }
 
   /* -- / Justify Content -- */
-
-  /* -- Floats --*/
-
-  .sm-right {
-    float: right;
-  }
-
-  .sm-left {
-    float: left;
-  }
-
-  /* -- / Floats --*/
-  /* -- Container -- */
-  /* .container {
-   
-     max-width: 100%;
-    } */
-
-  /* -- / Container -- */
-  .myColorContainer {
-    background: #ff9d00;
-  }
 
   /* -- Cols --*/
   .sm-col-1 {
@@ -1019,17 +754,6 @@ button {
     float: left;
   }
 
-  /* -- / Floats --*/
-  /* -- Container -- */
-  /* .container {
-     max-width: 960px;
-    } */
-
-  /* -- / Container -- */
-  .myColorContainer {
-    background: #fbff00;
-  }
-
   /* -- Cols --*/
   .md-col-1 {
     width: 8.333333%;
@@ -1177,19 +901,6 @@ button {
     float: left;
   }
 
-  /* -- / Floats --*/
-
-  /* -- Container -- */
-  /* .container {
-     max-width: 1140px;
-    } */
-
-  /* -- / Container -- */
-
-  .myColorContainer {
-    background: #a6ff00;
-  }
-
   /* -- Cols --*/
   .lg-col-1 {
     width: 8.333333%;
@@ -1317,12 +1028,6 @@ button {
   border: 2px solid #062454;
 }
 
-.btn-secondary {
-  color: #fff;
-  background-color: rgb(11, 60, 221);
-}
-
-.btn.secondary:hover,
 .btn:hover {
   color: #fff;
   background-color: #360c66;
