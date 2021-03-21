@@ -3,7 +3,7 @@ import axios from 'axios';
 const url = process.env.REACT_APP_SERVER;
 
 
-let token = "999" ;
+let token = "" ;
 if (localStorage.getItem('profile')) {
     token = localStorage.getItem('profile');
     token = JSON.parse(token).token;

@@ -5,6 +5,14 @@ import './style.css';
 
 const Character = ({ character }) => {
 const charLink = "/character/"+ character.id;
+const allLikes = Object.values(JSON.parse(localStorage.getItem('likes')));
+const isLiked = allLikes.findIndex(a => a == character.id);
+let srcLike ="";
+if ( isLiked == -1) {
+  srcLike = like;
+}else{
+  srcLike = likefull;
+}
 
   return (
     <div className ="lg-col-3 md-col-4 sm-col-6 xs-col-12  "   >
@@ -18,15 +26,15 @@ const charLink = "/character/"+ character.id;
       <div className =" relative">
 
         <div>
-        <p>{character.status} - {character.gender} </p> 
+        <p>{character.status} - {character.gender} </p>
         </div>
         <div className ="absolute-bottom  lg-col-2 md-col-2 sm-col-2 xs-col-2">
-        <img  className =" responsive  " src={likefull} />  
+        <img  className =" responsive  " src={srcLike} />
        </div>
 
-        
+
       </div>
-      
+
       </div>
 
     </div>

@@ -17,7 +17,12 @@ const Singlecharacter = ({ }) => {
 
 
   const findFav = Object.values(JSON.parse(localStorage.getItem('likes'))).findIndex( a => a == id );
-  const [likestatus, setLikestatus] = useState({ findFav });
+  const [likestatus, setLikestatus] = useState(findFav);
+  let initliketxt = "ADD TO  FAVORITES";
+  if (findFav != -1){
+    initliketxt = "Remove";
+  }
+  const [liketxt, setLiketxt] = useState(initliketxt);
 
 
   useEffect(async () => {
@@ -30,22 +35,26 @@ const Singlecharacter = ({ }) => {
 
 
 
+  function handleClicklike() {
+   dispatch(likeIt(data.id))
+   if (likestatus == -1) {
+     setLikestatus(parseInt(id));
+     setLiketxt("Remove");
+   }else{
+     setLikestatus(-1);
+     setLiketxt("ADD TO  FAVORITES");
+   }
+  }
 
 
 
   const Likes = () => {
 
     return(
-      (setLikestatus == -1)?
       <>
-      <button onClick={() => dispatch(likeIt(data.id))}  className="btn btn-default">
-        Remove</button>
+      <button onClick={handleClicklike}  className="btn btn-default">
+        {liketxt}</button>
       </>
-    :
-    <>
-    <button onClick={() => dispatch(likeIt(data.id))}  className="btn btn-default">
-      ADD TO  FAVORITES</button>
-    </>
     );
 
   }
