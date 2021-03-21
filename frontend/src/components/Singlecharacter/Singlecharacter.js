@@ -4,7 +4,7 @@ import { getSinglecharacter } from '../../actions/characters';
 import { useSelector } from 'react-redux';
 import {  useParams } from "react-router-dom";
 import axios from 'axios';
-import { likeIt } from '../../actions/characters';
+import { likeIt } from '../../actions/auth';
 import './style.css';
 
 const Singlecharacter = ({ }) => {
@@ -14,6 +14,11 @@ const Singlecharacter = ({ }) => {
 
 
   const [data, setData] = useState({ });
+
+
+  const findFav = Object.values(JSON.parse(localStorage.getItem('likes'))).findIndex( a => a == id );
+  const [likestatus, setLikestatus] = useState({ findFav });
+
 
   useEffect(async () => {
     const result = await axios(
@@ -25,14 +30,22 @@ const Singlecharacter = ({ }) => {
 
 
 
+
+
+
   const Likes = () => {
 
     return(
-      <div>
-        <button onClick={() => dispatch(likeIt(data.id))}>
-          Like
-        </button>
-      </div>
+      (setLikestatus == -1)?
+      <>
+      <button onClick={() => dispatch(likeIt(data.id))}  className="btn btn-default">
+        Remove</button>
+      </>
+    :
+    <>
+    <button onClick={() => dispatch(likeIt(data.id))}  className="btn btn-default">
+      ADD TO  FAVORITES</button>
+    </>
     );
 
   }
@@ -52,14 +65,11 @@ const Singlecharacter = ({ }) => {
             <p><span className="heavy">species: </span> {data.species}</p>
             <p><span className="heavy">Last known location: </span> Earth (Replacement Dimension)</p>
             <p><span className="heavy">Created: </span> {data.created}</p>
-            <button  className="btn btn-default" onclick="">
-              ADD TO  FAVORITES</button>
+            <Likes />
          </div>
 
     </div>
-    <br/>
-    <Likes />
-    <br/>
+
     </div>
   );
 

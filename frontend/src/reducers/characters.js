@@ -5,8 +5,7 @@ export default (characters = [], action) => {
       return action.payload;
     case 'FETCH_SINGLE':
       return action.payload;
-    case 'likeIT':
-      return action.payload;
+  
     default:
       return characters;
   }

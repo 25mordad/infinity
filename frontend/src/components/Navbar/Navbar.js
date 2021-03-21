@@ -7,6 +7,7 @@ import logo from "../../images/logo.png";
 
 const Navbar = ({ }) => {
   const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')));
+
   const dispatch = useDispatch();
   const location = useLocation();
 
@@ -16,6 +17,7 @@ const Navbar = ({ }) => {
     // history.push('/auth');
     setUser(null);
   };
+
 
   useEffect(() => {
     const token = user?.token;
@@ -33,7 +35,7 @@ const Navbar = ({ }) => {
     <div className =" container content-width flex flex-wrap rick-border mt4 my4 p3  " >
 
       <div className ="lg-col-2 md-col-3 sm-col-4 xs-col-6  left" >
-      <a   href="/" ><img  className =" responsive " src={logo} />  </a>
+      <a  href="/" ><img  className =" responsive " src={logo} />  </a>
       </div>
 
       <div className ="lg-col-10 md-col-9  sm-col-8 xs-col-6 right right-text " >
@@ -48,8 +50,8 @@ const Navbar = ({ }) => {
         <a className =" btn btn-default"  href="/auth" >Login</a>
       )}
       </div>
-    
-    
+
+
     </div>
   );
 }

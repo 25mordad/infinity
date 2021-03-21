@@ -56,3 +56,36 @@ export const signup = async (req, res) => {
     console.log(error);
   }
 };
+
+
+
+
+///like charac
+export const likeCharac = async (req,res) => {
+
+const { id } = req.params;
+
+  try {
+
+    if (!req.userId) {
+        return res.json({ message: "Unauthenticated" });
+      }
+
+    const user = await UserModal.findById(req.userId);
+
+    const index = user.likes.findIndex((mid) => mid ===String(id));
+    if (index === -1) {
+      user.likes.push(id);
+    }else{
+      user.likes = user.likes.filter((mid) => mid !== String(id));
+    }
+
+
+    const updatedUser = await UserModal.findByIdAndUpdate(req.userId, user, { new: true });
+
+    res.status(200).json(updatedUser);
+
+  } catch (e) {
+    res.status(404).json({ message: error.message });
+  }
+}
