@@ -19,21 +19,21 @@ if (localStorage.getItem('profile')) {
 }
 
   return (
-    <div className ="lg-col-3 md-col-4 sm-col-6 xs-col-12  "   >
+    <div className ="lg-col-3 md-col-4 sm-col-6 xs-col-12">
       <div className ="box-shadow rounded  bg-navy m3">
 
-      <a href={charLink}><img className ="rounded-top responsive  " src={character.image} /></a>
+      <a href={charLink}><img alt="character" className ="rounded-top responsive" src={character.image} /></a>
       <br/>
       <div className ="p2 px3">
       <a  className ="heavy text-beige " href={charLink}> {character.name} </a>
 
-      <div className =" relative">
-
+      <div className ="relative">
         <div>
         <p>{character.status} - {character.gender} </p>
         </div>
-        <div className ="absolute-bottom  lg-col-2 md-col-2 sm-col-2 xs-col-2">
-        <img  className =" responsive  " src={srcLike} />
+        <div className ="absolute-bottom  lg-col-2 md-col-2 sm-col-2 xs-col-2 pt2">
+          <br/>
+         <img alt="like" className ="pointer responsive" src={srcLike} />
        </div>
 
 
@@ -42,7 +42,7 @@ if (localStorage.getItem('profile')) {
       </div>
 
     </div>
-     </div>
+  </div>
   );
 }
 

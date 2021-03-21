@@ -55,6 +55,13 @@ body {
   font-size: 6rem;
   font-weight: 900;
 }
+.icon-w {
+  width: 2.5rem;
+  cursor: pointer;
+}
+.pointer {
+  cursor: pointer;
+}
 
 /* -- Normal CSS --*/
 html {
@@ -75,6 +82,8 @@ button {
 }
 .content-width {
   width: 90%;
+  overflow: hidden;
+  text-overflow: "----";
 }
 /* -- Margins -- */
 /* -- 2 -- */
@@ -315,24 +324,6 @@ button {
 .justify {
   text-align: justify;
 }
-
-/* -- / Text Alignment -- */
-
-/* -- Vertical Alignment -- */
-
-.align-top {
-  vertical-align: top;
-}
-
-.align-bottom {
-  vertical-align: bottom;
-}
-
-.align-middle {
-  vertical-align: middle;
-}
-
-/* -- / Vertical Alignment -- */
 
 /* -- Justify Content -- */
 
@@ -962,6 +953,8 @@ button {
   }
   .content-width {
     width: 70%;
+    overflow: hidden;
+    text-overflow: "----";
   }
 
   .lg-flex {
@@ -1010,8 +1003,6 @@ button {
   display: flex;
   margin: 0px auto;
 }
-
-
 
 .btn {
   font-size: 16px;

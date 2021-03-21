@@ -41,14 +41,14 @@ const Listchar = () => {
       <div className ="bg-logo center margin-auto container" >
       <div className ="lg-col-12  md-col-12 sn-col-12 xs-col-12 flex flex-wrap mt4 pt4">
 
-      <div className =" lg-col-1 md-col-1 sm-col-1 xs-col-1 p4">
-         <img  onClick={prvpg} className =" responsive"  src={goback} />
-        </div>
+      <div className =" lg-col-1 md-col-1 sm-col-1 xs-col-1  p4">
+         <img   alt="goback"  onClick={prvpg} className ="icon-w"  src={goback} />
+      </div>
 
-        <div className =" lg-col-10 md-col-10 sm-col-10 xs-col-10">
+        <div className =" lg-col-10 md-col-10 sm-col-10 xs-col-8">
         <h1 className =" text-navy  xs-hide text-72 heavy center margin-auto" >The Rick and Morty <br/>Infinity</h1></div>
         <div className =" lg-col-1 md-col-1 sm-col-1 xs-col-1 p4">
-         <img  onClick={nxtpg} className =" responsive"  src={gonext} />
+         <img   alt="gonext"  onClick={nxtpg} className ="icon-w"  src={gonext} />
         </div>
 
       </div>
