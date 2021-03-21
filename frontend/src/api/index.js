@@ -11,7 +11,7 @@ if (localStorage.getItem('profile')) {
 
 export const fetchCharacters = (page) => axios.get(`${url}/list/${page}`);
 export const fetchSinglechar = (id) => axios.get(`${url}/list/character/${id}`);
-export const likeCharacter = (id) => axios.patch(`${url}/list/likePost/${id}?token=${token}`);
 
 export const signUp = (formData) => axios.post(`${url}/user/signup`,formData);
 export const signIn = (formData) => axios.post(`${url}/user/signin`,formData);
+export const likeCharacter = (id) => axios.patch(`${url}/user/likePost/${id}?token=${token}`);

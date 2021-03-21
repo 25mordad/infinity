@@ -40,20 +40,3 @@ const { id } = req.params;
     res.status(404).json({ message: error.message });
   }
 }
-
-///like charac
-export const likeCharac = async (req,res) => {
-
-const { id } = req.params;
-
-  try {
-
-
-    console.log(id,req.userId);
-
-    res.status(200).json(id);
-
-  } catch (e) {
-    res.status(404).json({ message: error.message });
-  }
-}
