@@ -39,7 +39,10 @@ body {
   background-color: #fff;
   color: #000;
 }
-
+.responsive {
+  width: 100%;
+  height: 100%;
+}
 .rick-color {
   color: #99ff33;
 }
@@ -70,7 +73,9 @@ textarea,
 button {
   box-sizing: border-box;
 }
-
+.content-width {
+  width: 90%;
+}
 /* -- Margins -- */
 /* -- 2 -- */
 .m2 {
@@ -955,7 +960,7 @@ button {
   .lg-hide {
     display: none;
   }
-  .lg-content-width {
+  .content-width {
     width: 70%;
   }
 
@@ -1006,9 +1011,7 @@ button {
   margin: 0px auto;
 }
 
-.content-width {
-  width: 90%;
-}
+
 
 .btn {
   font-size: 16px;
@@ -1051,8 +1054,4 @@ button {
 }
 .border-gray {
   border: 1px solid #e5e5e5;
-}
-.responsive {
-  width: 100%;
-  height: 100%;
 }

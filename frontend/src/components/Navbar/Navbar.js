@@ -36,7 +36,7 @@ const Navbar = () => {
     <div className =" container  content-width flex flex-wrap  mt4 pt2 " >
 
       <div className ="lg-col-1 md-col-1 sm-col-2 xs-col-3  left" >
-      <a  href="/" ><img  alt="logo" className =" responsive " src={logo} />  </a>
+      <a  href="/" ><img  alt="logo"  className =" responsive " src={logo} />  </a>
       </div>
 
       <div className ="lg-col-11  md-col-11  sm-col-10 xs-col-9 right   pt4 right-text " >
