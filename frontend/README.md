@@ -1,9 +1,11 @@
 ################################################
 
-npm install react-redux jwt-decode react-router-dom axios redux-thunk
-
+npm i
+copy .env.copy to .env and set the variables
+npm start
 
 ################################################
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

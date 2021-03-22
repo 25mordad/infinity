@@ -1,1 +1,3 @@
-npm install express body-parser cors mongoose nodemon bcryptjs jsonwebtoken rickmortyapi
+npm i
+copy .env.copy to .env and set the variables
+npm start
