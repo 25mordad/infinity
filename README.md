@@ -10,7 +10,7 @@ Using React, Node.js, Express & MongoDB. The App is called "Infinity".
 
 ## Setup:
 
-- run `npm i && npm start` for both backend and fronend side to start the app
+- run `npm i && npm start` for both backend and fronend to start the app.
 - make a copy from .env.copy (both backend and frontend) and name it .env and setup with a right variables.
 
 ## Dependencies:
@@ -20,8 +20,8 @@ Using React, Node.js, Express & MongoDB. The App is called "Infinity".
 - react-redux :To better managing state.
 - redux-thunk : To dispatch an action only if a certain condition is met.
 - axios: Client HTTP API, help to use async and await.
-- jwt-decode: decoding JWTs token.
-- react-router-dom: client-side routing.
+- jwt-decode: Decoding JWTs token.
+- react-router-dom: Client-side routing.
 
 --backend--
 
