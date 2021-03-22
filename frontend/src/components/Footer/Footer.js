@@ -5,7 +5,7 @@ class Footer extends Component {
   render() {
 
     return (
-      <footer className="bg-navy">
+      <footer className="bg-dgray">
 
      <div className="p4">
        

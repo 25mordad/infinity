@@ -18,6 +18,9 @@ a {
 .bg-gray {
   background-color: #f2f2f2;
 }
+.bg-dgray {
+  background-color: #e3e5e8;
+}
 .bg-navy {
   background-color: #1f243b;
   color: beige;
@@ -1061,7 +1064,7 @@ li {
   padding: 0;
 }
 .footer-icon {
-  width: 1.5rem;
+  width: 1rem;
 }
 .header-icon {
   max-width: 5.5rem;
