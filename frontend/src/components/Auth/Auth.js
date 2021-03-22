@@ -34,7 +34,7 @@ const Auth = () => {
     };
 
   return (
-     <div className =" my4">
+     <div className =" my4 page-h">
       <div className ="lg-col-7 md-col-10  margin-auto flex flex-wrap rick-border ">
        <div className ="lg-col-5 md-col-5 sm-col-6 xs-col-12 py2 pb4 ">
         <div>

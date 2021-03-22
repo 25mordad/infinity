@@ -5,6 +5,7 @@ import Singlecharacter from './components/Singlecharacter/Singlecharacter';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Notfound from './components/Notfound/Notfound';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/character/:id" component={Singlecharacter} />
         <Route component={Notfound} />
       </Switch>
+      <Footer />
     </BrowserRouter>
 
   );

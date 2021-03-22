@@ -38,7 +38,7 @@ const Listchar = () => {
       loading
     </div> :
     <div>
-      <div className ="bg-logo center margin-auto container" >
+      <div className ="container bg-logo center margin-auto " >
       <div className ="lg-col-12  md-col-12 sn-col-12 xs-col-12 flex flex-wrap mt4 pt4">
 
       <div className =" lg-col-1 md-col-1 sm-col-1 xs-col-1  p4">
@@ -58,12 +58,13 @@ const Listchar = () => {
 
 
 
-        <div className ="container content-width  flex flex-wrap ">
+        <div className ="container content-width  flex flex-wrap pb4 ">
         {characters.map( (character) =>
           (
           <Character key={character.id} character={character} />
         ) )}
         </div>
+        
         </div>
     </div>
   );

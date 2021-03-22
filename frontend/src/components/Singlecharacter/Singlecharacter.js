@@ -64,7 +64,7 @@ const Singlecharacter = () => {
   }
 
   return (
-    <div className =" my4  ">
+    <div className =" my4  page-h ">
      <div className ="  border-navy  container  content-width flex flex-wrap   ">
         <div className ="lg-col-3 md-col-3 sm-col-6 xs-col-11 my4 p4">
           <img alt="charpic" className="circle my2" width="230" src={data.image} /> 
