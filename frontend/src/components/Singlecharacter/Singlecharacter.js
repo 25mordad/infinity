@@ -17,7 +17,7 @@ const Singlecharacter = () => {
   if (localStorage.getItem('profile')) {
     findFav = Object.values(JSON.parse(localStorage.getItem('likes'))).findIndex( a => a === id );
     if (findFav !== -1){
-      initliketxt = "Remove";
+      initliketxt = "Remove FROM FAVORITES";
     }
   }
   const [likestatus, setLikestatus] = useState(findFav);
@@ -67,7 +67,7 @@ const Singlecharacter = () => {
     <div className =" my4  page-h ">
      <div className ="  border-navy  container  content-width flex flex-wrap   ">
         <div className ="lg-col-3 md-col-3 sm-col-6 xs-col-11 my4 p4">
-          <img alt="charpic" className="circle my2" width="230" src={data.image} /> 
+          <img alt="charpic" className="circle my2" width="230" src={data.image} />
         </div>
          <div  className="lg-col-9 md-col-9 sm-col-6 xs-col-12 p2  my1 pl4">
             <h2 className="rick-color text-title">  {data.name} </h2>
